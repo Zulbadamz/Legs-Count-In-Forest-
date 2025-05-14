@@ -1,0 +1,39 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+public class AnimalLegCounterTest {
+
+@test
+public void testCountFourLeggedAnimalsExample1() {
+String [] animals = {"lion", "monkey", "deer", "snake", "elephant"};
+assertEquals(3, result, "The count of four_legged animals should be 3.");
+} 
+
+@test
+public void testCountFourLeggedAnimalsExample2() {
+String [] animals = {"frog", "horse", "spider", "ant"};
+assertEquals(1, result, "The count of four_legged animals should be 1.");
+} 
+
+@test
+public void testCountFourLeggedAnimalsExample3() {
+String [] animals = {"cat", "monkey", "deer", "snake"};
+assertEquals(2, result, "The count of four-legged animals should be 2.");
+} 
+
+@test
+public void testCountFourLeggedAnimalsEmptyArray() {
+String [] animals = {};
+assertEquals(0, result, "The count of four-legged animals should be 0 for an empty array.");
+} 
+
+@test
+public void testCountFourLeggedAnimalsNoFourLegs() {
+String [] animals = {"spider", "monkey", "ant", "snake"};
+assertEquals(0, result, "The count of four-legged animals should be 0 when none exist.");
+} 
+
+}
+
+
+
